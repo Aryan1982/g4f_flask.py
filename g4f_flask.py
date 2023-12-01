@@ -4,7 +4,7 @@ from flask_cors import CORS
 import json
 
 app = Flask(__name__)
-CORS(app, resources={r"/chat": {"origins": "http://localhost:8000"}})
+CORS(app)
 
 g4f.debug.logging = True 
 g4f.check_version = False  
