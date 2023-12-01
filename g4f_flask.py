@@ -39,6 +39,6 @@ def chat():
             stream_with_context(generate_stream([str(e)], True)),
             mimetype='text/event-stream'
         )
-
+        
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(host='0.0.0.0', port=5000)
